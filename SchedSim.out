@@ -1,0 +1,352 @@
+Time is: 0
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 1
+	Processing External Events ...
+		Spawning new job to the ready queue:
+		---Job #1, priority = 3, time remaining = 8
+		Job #1 gets the CPU.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #1, priority = 3, time remaining = 7
+
+Time is: 2
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #1, priority = 3, time remaining = 6
+
+Time is: 3
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Time slice expired for Job #1
+	<<TICK>>
+		---Job #1, priority = 3, time remaining = 5
+
+Time is: 4
+	Processing External Events ...
+		Make waiting Job #1 ready:
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #1, priority = 3, time remaining = 4
+
+Time is: 5
+	Processing External Events ...
+		---Exit Type:  Completed.
+		---Job #1, priority = 3, time remaining = 4
+		---Running Time = 4, Idle Time = 0, Turn-Around Time = 4, Entered CPU 1 time(s).
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 6
+	Processing External Events ...
+		Spawning new job to the ready queue:
+		---Job #2, priority = 3, time remaining = 5
+		Job #2 gets the CPU.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #2, priority = 3, time remaining = 4
+
+Time is: 7
+	Processing External Events ...
+		Trying to terminate job #2:
+		---Failed: Cannot terminate running job.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #2, priority = 3, time remaining = 3
+
+Time is: 8
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Time slice expired for Job #2
+	<<TICK>>
+		---Job #2, priority = 3, time remaining = 2
+
+Time is: 9
+	Processing External Events ...
+		Spawning new job to the ready queue:
+		---Job #3, priority = 2, time remaining = 6
+		Job #2 preempted and moved to ready queue.
+		Job #3 gets the CPU.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #3, priority = 2, time remaining = 5
+
+Time is: 10
+	Processing External Events ...
+		Start I/O for current job:
+		Job #3 is moved to waiting queue.
+	Processing Internal Events ...
+		Job #2 gets the CPU.
+	<<TICK>>
+		---Job #2, priority = 3, time remaining = 1
+
+Time is: 11
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #2, priority = 3, time remaining = 0
+
+Time is: 12
+	Processing External Events ...
+		Spawning new job to the ready queue:
+		---Job #4, priority = 1, time remaining = 5
+		Job #2 preempted and moved to ready queue.
+		Job #4 gets the CPU.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #4, priority = 1, time remaining = 4
+
+Time is: 13
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #4, priority = 1, time remaining = 3
+
+Time is: 14
+	Processing External Events ...
+		Spawning new job to the ready queue:
+		---Job #5, priority = 4, time remaining = 9
+	Processing Internal Events ...
+		Time slice expired for Job #4
+	<<TICK>>
+		---Job #4, priority = 1, time remaining = 2
+
+Time is: 15
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #4, priority = 1, time remaining = 1
+
+Time is: 16
+	Processing External Events ...
+		Trying to terminate job #4:
+		---Failed: Cannot terminate running job.
+	Processing Internal Events ...
+		Time slice expired for Job #4
+	<<TICK>>
+		---Job #4, priority = 1, time remaining = 0
+
+Time is: 17
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		---Exit Type:  Completed.
+		---Job #4, priority = 1, time remaining = 0
+		---Running Time = 5, Idle Time = 0, Turn-Around Time = 5, Entered CPU 1 time(s).
+		Job #2 gets the CPU.
+	<<TICK>>
+		---Job #2, priority = 3, time remaining = -1
+
+Time is: 18
+	Processing External Events ...
+		Spawning new job to the ready queue:
+		---Job #6, priority = 3, time remaining = 7
+	Processing Internal Events ...
+		---Exit Type:  Completed.
+		---Job #2, priority = 3, time remaining = -1
+		---Running Time = 6, Idle Time = 6, Turn-Around Time = 12, Entered CPU 3 time(s).
+		Job #6 gets the CPU.
+	<<TICK>>
+		---Job #6, priority = 3, time remaining = 6
+
+Time is: 19
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #6, priority = 3, time remaining = 5
+
+Time is: 20
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Time slice expired for Job #6
+	<<TICK>>
+		---Job #6, priority = 3, time remaining = 4
+
+Time is: 21
+	Processing External Events ...
+		Make waiting Job #4 ready:
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #6, priority = 3, time remaining = 3
+
+Time is: 22
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Time slice expired for Job #6
+	<<TICK>>
+		---Job #6, priority = 3, time remaining = 2
+
+Time is: 23
+	Processing External Events ...
+		Trying to terminate job #5:
+		---Exit Type:  Terminated.
+		---Job #5, priority = 4, time remaining = 9
+		---Running Time = 0, Idle Time = 9, Turn-Around Time = 9, Entered CPU 0 time(s).
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #6, priority = 3, time remaining = 1
+
+Time is: 24
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Time slice expired for Job #6
+	<<TICK>>
+		---Job #6, priority = 3, time remaining = 0
+
+Time is: 25
+	Processing External Events ...
+		Spawning new job to the ready queue:
+		---Job #7, priority = 1, time remaining = 7
+		Job #6 preempted and moved to ready queue.
+		Job #7 gets the CPU.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #7, priority = 1, time remaining = 6
+
+Time is: 26
+	Processing External Events ...
+		---Exit Type:  Completed.
+		---Job #7, priority = 1, time remaining = 6
+		---Running Time = 1, Idle Time = 0, Turn-Around Time = 1, Entered CPU 1 time(s).
+	Processing Internal Events ...
+		Job #6 gets the CPU.
+	<<TICK>>
+		---Job #6, priority = 3, time remaining = -1
+
+Time is: 27
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		---Exit Type:  Completed.
+		---Job #6, priority = 3, time remaining = -1
+		---Running Time = 8, Idle Time = 1, Turn-Around Time = 9, Entered CPU 2 time(s).
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 28
+	Processing External Events ...
+		Start I/O for current job:
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 29
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 30
+	Processing External Events ...
+		Make waiting Job #6 ready:
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 31
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 32
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 33
+	Processing External Events ...
+		Make waiting Job #7 ready:
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 34
+	Processing External Events ...
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 35
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 36
+	Processing External Events ...
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 37
+	Processing External Events ...
+		Spawning new job to the ready queue:
+		---Job #8, priority = 1, time remaining = 5
+		Job #8 gets the CPU.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #8, priority = 1, time remaining = 4
+
+Time is: 38
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+	<<TICK>>
+		---Job #8, priority = 1, time remaining = 3
+
+Time is: 39
+	Processing External Events ...
+		Nothing to do.
+	Processing Internal Events ...
+		Time slice expired for Job #8
+	<<TICK>>
+		---Job #8, priority = 1, time remaining = 2
+
+Time is: 40
+	Processing External Events ...
+		---Exit Type:  Completed.
+		---Job #8, priority = 1, time remaining = 2
+		---Running Time = 3, Idle Time = 0, Turn-Around Time = 3, Entered CPU 1 time(s).
+	Processing Internal Events ...
+		Nothing is ready.
+	Nothing is running.
+
+Time is: 41
+	No more events to process. Terminate all waiting jobs.
+		Trying to terminate job #3:
+		---Exit Type:  Terminated.
+		---Job #3, priority = 2, time remaining = 5
+		---Running Time = 1, Idle Time = 0, Turn-Around Time = 32, Entered CPU 1 time(s).
+
+-------------------------------------------
+The simulation has ended.
+
+Final Statistics:
+---Number of jobs entering the system: 8
+---Number of jobs terminated: 2
+---Number of jobs timed out: 0
+---Number of completed jobs: 6
+---Average wait time (completed jobs only): 1.1666666666666667
+---Average turn-around time (completed jobs only): 5.666666666666667
