@@ -13,4 +13,4 @@ Files included for PA2:
 
 6. ExternalEvents.java - This loads all the external events from a file and stores them in a map. 
 
-7. SchedSim.java - This is the main class that will simulate the priority based round robin scheduling algorithm. It is partially implementd. You will fill in the missing parts that are needed to implement the priority based round-robin algorithm.
+7. SchedSim.java - This is the main class that will simulate the priority based round robin scheduling algorithm. 
